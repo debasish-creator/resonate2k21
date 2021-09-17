@@ -24,7 +24,7 @@ const CardsContainer = styled.div`
   /* background-color: blue; */
   /* #3a3a9f */
   /* #3f3fb4 */
-  background-color: #3a3a9f;
+  background-color: #081733;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 `;
