@@ -18,6 +18,7 @@ function App() {
       {/* <Journal /> */}
       {/* <Routes /> */}
       {/* <TodoContainer /> */}
+      <Quizes />
       {/* <Quizes /> */}
       <Home />
     </div>
