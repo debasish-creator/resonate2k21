@@ -15,9 +15,9 @@ function App() {
       {/* <WideCards /> */}
       {/* <Quotes /> */}
       {/* <Journal /> */}
-      <Routes />
+      {/* <Routes /> */}
       {/* <TodoContainer /> */}
-      {/* <Quizes /> */}
+      <Quizes />
     </div>
   );
 }
