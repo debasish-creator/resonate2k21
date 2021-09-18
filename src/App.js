@@ -18,7 +18,7 @@ function App() {
       {/* <Journal /> */}
       {/* <Routes /> */}
       {/* <TodoContainer /> */}
-      <Quizes />
+      {/* <Quizes /> */}
       {/* <Quizes /> */}
       <Home />
     </div>
