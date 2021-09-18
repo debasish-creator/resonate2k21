@@ -11,6 +11,7 @@ const Routes = () => {
         <Route exact path="/">
           <Widecards />
           <Widecards />
+          <Widecards />
           {/* <Widecard /> */}
         </Route>
         <Route path="/journal">
