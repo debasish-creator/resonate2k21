@@ -15,12 +15,13 @@ function App() {
       {/* <Cards /> */}
       {/* <WideCards /> */}
       {/* <Quotes /> */}
-      {/* <Journal /> */}
+      <Journal />
       {/* <Routes /> */}
       {/* <TodoContainer /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}
-      <Home />
+      {/* <Quizes /> */}
+      {/* <Home /> */}
     </div>
   );
 }

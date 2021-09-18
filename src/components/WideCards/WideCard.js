@@ -21,6 +21,8 @@ const SingleWideCard = styled.div`
   
   width: 250%;
   background-color: #3f3fb4;
+   /* #323291 */
+   /* #040432 */
   /* border: 2px solid red; */
   margin-bottom: 2.5rem;
   border-radius: 1.2rem;
