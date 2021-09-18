@@ -7,6 +7,7 @@ import Journal from "./components/Journal/Journal";
 import Routes from "./Routes";
 import TodoContainer from "./pages/TodoList/TodoContainer";
 import Quizes from "./pages/Quiz/Quizes";
+import Home from "./pages/Home/Home";
 function App() {
   return (
     <div>
@@ -15,9 +16,10 @@ function App() {
       {/* <WideCards /> */}
       {/* <Quotes /> */}
       {/* <Journal /> */}
-      <Routes />
+      {/* <Routes /> */}
       {/* <TodoContainer /> */}
       {/* <Quizes /> */}
+      <Home />
     </div>
   );
 }
