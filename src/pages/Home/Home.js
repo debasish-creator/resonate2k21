@@ -64,7 +64,7 @@ const WidecardContainer = styled.div`
 const CardContainer = styled.div`
   height: 400px;
   display: grid;
-  background-color: #2b2aa2ff;
+  background-color: #323291;
   grid-template-columns: repeat(3, 1fr);
 `;
 const LearningPathContainer = styled.div`
