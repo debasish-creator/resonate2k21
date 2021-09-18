@@ -2,11 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
 import { useState } from "react";
+import { getDatabase, set, ref } from "firebase/database";
+import { datab } from "../../firebase";
+// import uniqid from "uniqid";
+
 const Journal = () => {
   // rows="4" cols="50"
   const [data, setData] = useState("");
+  const [id, setId] = useState(0);
   const handleClick = (e) => {
     e.preventDefault();
+    set(ref(datab, "journals/"), {
+      message: data,
+    });
+    setData("");
+    setId((id) => id + 1);
   };
   return (
     <>
