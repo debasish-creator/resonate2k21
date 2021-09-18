@@ -6,6 +6,7 @@ import Quotes from "./pages/Quotes/Quotes";
 import Journal from "./components/Journal/Journal";
 import Routes from "./Routes";
 import TodoContainer from "./pages/TodoList/TodoContainer";
+import Quizes from "./pages/Quiz/Quizes";
 function App() {
   return (
     <div>
@@ -15,7 +16,8 @@ function App() {
       {/* <Quotes /> */}
       {/* <Journal /> */}
       {/* <Routes /> */}
-      <TodoContainer />
+      {/* <TodoContainer /> */}
+      <Quizes />
     </div>
   );
 }
