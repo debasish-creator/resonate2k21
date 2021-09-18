@@ -6,7 +6,7 @@ const Widecards = () => {
     <>
       <WidecardContainer>
         <WideCard />
-        <WideCard />
+        {/* <WideCard /> */}
       </WidecardContainer>
     </>
   );

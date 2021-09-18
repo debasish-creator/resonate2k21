@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 const Widecard = () => {
   return (
     <>
@@ -19,7 +21,6 @@ const SingleWideCard = styled.div`
   /* border: 2px solid red; */
   margin-bottom: 2.5rem;
   border-radius: 1.2rem;
-
   position: relative;
   > h1 {
     color: whitesmoke;

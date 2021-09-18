@@ -4,6 +4,8 @@ import Cards from "./components/Cards/Cards";
 import WideCards from "./components/WideCards/WideCards";
 import Quotes from "./pages/Quotes/Quotes";
 import Journal from "./components/Journal/Journal";
+import Routes from "./Routes";
+import TodoContainer from "./pages/TodoList/TodoContainer";
 function App() {
   return (
     <div>
@@ -11,7 +13,9 @@ function App() {
       {/* <Cards /> */}
       {/* <WideCards /> */}
       {/* <Quotes /> */}
-      <Journal />
+      {/* <Journal /> */}
+      {/* <Routes /> */}
+      <TodoContainer />
     </div>
   );
 }
