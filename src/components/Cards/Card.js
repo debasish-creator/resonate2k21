@@ -12,6 +12,8 @@ const Card = () => {
 
 export default Card;
 const SingleCard = styled.div`
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   height: 40vh;
   width: 15vw;
   /* border: 2px solid red; */
@@ -26,6 +28,8 @@ const SingleCard = styled.div`
     text-align: center;
   }
   &:hover {
-    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.01);
   }
 `;
