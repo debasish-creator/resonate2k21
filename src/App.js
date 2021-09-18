@@ -1,16 +1,11 @@
-import React from 'react';
-import GlobalStyle from './globalStyles';
-import Home from './pages/Home/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react'
 
 function App() {
   return (
-    <Router>
-      <GlobalStyle />
-      <Home />
-      
-    </Router>
-  );
+    <div>
+      Hello
+    </div>
+  )
 }
 
-export default App;
+export default App
