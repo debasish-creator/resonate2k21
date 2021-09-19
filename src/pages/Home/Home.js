@@ -104,6 +104,8 @@ const NavContainer = styled.div`
   display: grid;
   grid-template-columns: 20% 70% 10%;
   align-items: center;
+  font-weight: 600;
+  background-color: #081733;
 `;
 
 const LogoContainer = styled.div`
@@ -131,11 +133,12 @@ const NavBar = styled.div`
     color: white;
     display: grid;
     justify-items: center;
-    font-weight: 500;
+    font-weight: 800;
   }
   > ul li:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
     border-radius: 20px;
+    transform: scale(1.1);
   }
 `;

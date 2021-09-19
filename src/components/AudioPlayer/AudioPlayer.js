@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import url from "./music.mp3";
 import styled from "styled-components";
+import { Button } from "@material-ui/core";
 const useAudio = (url) => {
   const [audio] = useState(new Audio(url));
   const [playing, setPlaying] = useState(false);
@@ -25,11 +26,14 @@ const AudioPlayer = () => {
 
   return (
     <div>
-      <Button onClick={toggle}>{playing ? "Pause" : "Play"}</Button>
+      {/* <Button onClick={toggle}>{playing ? "Pause" : "Play"}</Button> */}
+      <Button variant="contained" color="secondary" onClick={toggle}>
+        {playing ? "Pause" : "Play"}
+      </Button>
     </div>
   );
 };
 
 export default AudioPlayer;
 
-const Button = styled.button``;
+// const Button = styled.button``;

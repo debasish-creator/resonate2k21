@@ -6,6 +6,8 @@ import Widecard from "./components/WideCards/WideCard";
 import Quotes from "./pages/Quotes/Quotes";
 import Book from "./pages/Book/Book";
 import Home from "./pages/Home/Home";
+import Quiz from "./pages/Quiz/Quizes";
+import Todo from "./pages/TodoList/TodoContainer";
 const Routes = () => {
   return (
     <Router>
@@ -21,6 +23,15 @@ const Routes = () => {
           <Book />
         </Route>
         <Route path="/quotes">
+          <Quotes />
+        </Route>
+        <Route path="/quiz">
+          <Quiz />
+        </Route>
+        <Route path="/todo">
+          <Todo />
+        </Route>
+        <Route path="/music">
           <Quotes />
         </Route>
       </Switch>
