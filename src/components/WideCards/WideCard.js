@@ -2,13 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Widecard = () => {
+const Widecard = ({ heading, subheading, routes }) => {
   return (
     <>
-      <SingleWideCard>
-        <h1>Reflect on where you are at</h1>
+      {/* <SingleWideCard>
+        <h1>{heading}</h1>
 
-        <div>Write a short Journal</div>
+        <div>{subheading}</div>
+      </SingleWideCard> */}
+
+      <SingleWideCard>
+        <h1>{heading}</h1>
+
+        <Link to={routes}>
+          <div>{subheading}</div>
+        </Link>
       </SingleWideCard>
     </>
   );
@@ -19,14 +27,14 @@ export default Widecard;
 const SingleWideCard = styled.div`
   /* height: 30%; */
   
-  width: 250%;
+  width: 50%;
   background-color: #3f3fb4;
    /* #323291 */
    /* #040432 */
   /* border: 2px solid red; */
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
   border-radius: 1.2rem;
-  padding: 1.5rem 0rem;
+  padding: 4rem 0rem;
   position: relative;
   /* Check this line */
   margin-left:-10rem ;
@@ -37,6 +45,7 @@ const SingleWideCard = styled.div`
     /* margin-left: 1.5rem; */
     /* margin: 1rem 1rem; */
     padding: 1rem 0.5rem;
+  
   }
   >div{
     background-color: #ff80e9;

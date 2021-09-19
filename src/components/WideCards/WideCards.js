@@ -2,14 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import WideCard from "./WideCard";
 import { Link } from "react-router-dom";
-const Widecards = () => {
+const Widecards = ({ heading, subheading, routes }) => {
   return (
     <>
       <WidecardContainer>
-        <Link to="/journal">
-          <WideCard />
-          {/* <WideCard /> */}
-        </Link>
+        <WideCard heading={heading} subheading={subheading} routes={routes} />
+        {/* <WideCard /> */}
       </WidecardContainer>
     </>
   );

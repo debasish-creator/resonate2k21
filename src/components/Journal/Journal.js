@@ -34,6 +34,11 @@ const Journal = () => {
           <Button variant="contained" color="secondary" type="submit">
             Save
           </Button>
+          <ViewButton>
+            <Button variant="contained" color="secondary" type="submit">
+              Your Journals
+            </Button>
+          </ViewButton>
         </form>
       </JournalContainer>
     </>
@@ -41,6 +46,8 @@ const Journal = () => {
 };
 
 export default Journal;
+
+const Navbar = ``;
 
 const JournalContainer = styled.div`
   /* background-color: #3a3a9f; */
@@ -86,7 +93,6 @@ const JournalContainer = styled.div`
     top: 0;
     /* left: 8rem; */
     font-weight: 800;
-
     height: 10%;
     font-size: 2.5rem;
     display: inline-block;
@@ -101,7 +107,6 @@ const JournalContainer = styled.div`
     top: 0;
     /* left: 8rem; */
     font-weight: 800;
-
     font-size: 3rem;
     width: 100%;
     left: 6.5rem;
@@ -109,5 +114,14 @@ const JournalContainer = styled.div`
   button {
     width: 20%;
     /* margin-top: 1rem; */
+  }
+`;
+const ViewButton = styled.div`
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+
+  > button {
+    width: 100%;
   }
 `;

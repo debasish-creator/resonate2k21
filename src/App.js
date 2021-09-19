@@ -15,8 +15,8 @@ function App() {
       {/* <Cards /> */}
       {/* <WideCards /> */}
       {/* <Quotes /> */}
-      <Journal />
-      {/* <Routes /> */}
+      {/* <Journal /> */}
+      <Routes />
       {/* <TodoContainer /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}

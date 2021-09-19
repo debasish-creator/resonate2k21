@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import CarouselComponent from "../../components/Carousel/carouselComponent";
 import Card from "../../components/Cards/Card";
-import Widecard from "../../components/WideCards/WideCard";
+import Widecards from "../../components/WideCards/WideCards";
+import Widecarddata from "./Widecarddata";
+import { useState } from "react";
 function Home() {
+  const [data2, setData2] = useState(Widecarddata);
   return (
     <div>
       {console.log("Gourab Maghya")}
@@ -32,18 +35,21 @@ function Home() {
       </LearningPathContainer>
 
       <GuidedJournalContainer>
-        <h2>Guided Journal</h2>
-        <WidecardContainer>
-          <Widecard />
-        </WidecardContainer>
-        <h2>Rescue Session</h2>
-        <WidecardContainer>
-          <Widecard />
-        </WidecardContainer>
-        <h2>Find me a Book</h2>
-        <WidecardContainer>
-          <Widecard />
-        </WidecardContainer>
+        {data2.map((data) => {
+          const { h, heading, subheading, routes, id } = data;
+          return (
+            <article key={id}>
+              <h1>{h}</h1>
+              <WidecardContainer>
+                <Widecards
+                  heading={heading}
+                  subheading={subheading}
+                  routes={routes}
+                />
+              </WidecardContainer>
+            </article>
+          );
+        })}
       </GuidedJournalContainer>
     </div>
   );
