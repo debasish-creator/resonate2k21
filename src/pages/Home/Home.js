@@ -70,7 +70,7 @@ const GuidedJournalContainer = styled.div`
   /* display: grid;
   justify-items: center; */
   width: 100%;
-  background: #2b2aa2ff;
+  background: #17144bff;
   color: white;
   text-align: center;
   > article > h1 {
@@ -85,12 +85,12 @@ const WidecardContainer = styled.div`
 const CardContainer = styled.div`
   height: 400px;
   display: grid;
-  background-color: #323291;
+  background-color: #17144bff;
   grid-template-columns: repeat(3, 1fr);
 `;
 const LearningPathContainer = styled.div`
   > h2 {
-    background: #2b2aa2ff;
+    background: #17144bff;
     display: grid;
     justify-items: center;
     color: white;
@@ -98,14 +98,13 @@ const LearningPathContainer = styled.div`
 `;
 const NavContainer = styled.div`
   height: 80px;
-  background: #2b2aa2ff;
   padding: 20px;
 
   display: grid;
   grid-template-columns: 20% 70% 10%;
   align-items: center;
   font-weight: 600;
-  background-color: #081733;
+  background-color: #17144bff;
 `;
 
 const LogoContainer = styled.div`
@@ -117,7 +116,7 @@ const LogoContainer = styled.div`
 `;
 
 const NavBar = styled.div`
-  background-color: #3d40d3ff;
+  background-color: #20165bff;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 15px;

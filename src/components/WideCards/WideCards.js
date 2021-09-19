@@ -21,7 +21,7 @@ const WidecardContainer = styled.div`
   padding: 5rem 0;
   width: 100vw;
 
-  background-color: #081733;
+  background-color: #17144bff;
   display: flex;
   align-items: center;
   justify-content: center;
