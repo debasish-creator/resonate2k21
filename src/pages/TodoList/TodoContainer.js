@@ -73,7 +73,8 @@ const TodoContainer = () => {
 
 export default TodoContainer;
 const Cover = styled.div`
-  background-color: white;
+  /* background-color: white; */
+  background-color: #17144bff;
   height: 100vh;
   width: 100vw;
   /* margin-top: 5rem; */
@@ -81,6 +82,7 @@ const Cover = styled.div`
 
 const Container = styled.div`
   display: flex;
+  padding: 2rem;
   /* background-color: black;
   height: 100vh;
   width: 100vw; */
@@ -101,6 +103,9 @@ const ContainerLeft = styled.div`
     border: 0.1px solid gray;
     margin-top: 7px;
     font-weight: bold;
+  }
+  > h3 {
+    color: white;
   }
 `;
 

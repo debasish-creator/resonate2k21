@@ -71,6 +71,7 @@ const FormContainer = styled.div`
   > form {
     margin: 1rem 1rem;
   }
+
   input {
     /* margin: 1rem 1rem; */
 
