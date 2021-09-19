@@ -23,6 +23,7 @@ const ContainerRightBottom = styled.div`
   padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
+
   > p {
     padding-left: 20px;
     display: flex;

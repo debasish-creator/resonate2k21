@@ -60,8 +60,9 @@ const Book = () => {
 export default Book;
 const BookData = styled.div`
   background-color: #081733;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  font-style: normal;
 `;
 const FormContainer = styled.div`
   display: grid;
@@ -75,11 +76,13 @@ const FormContainer = styled.div`
 
     width: 50%;
     padding: 0.5rem;
+    font-weight: bold;
   }
   button {
     width: 10%;
     padding: 0.2rem;
     margin-top: 0.5rem;
+    font-weight: 550;
   }
 `;
 
