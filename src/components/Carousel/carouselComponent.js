@@ -72,7 +72,7 @@ const Container = styled.div`
   height: 450px;
   width: 100vw;
 
-  background: #3d40d3ff;
+  background: #17144bff;
   display: grid;
   align-items: center;
   justify-items: center;
