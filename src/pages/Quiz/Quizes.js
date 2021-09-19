@@ -56,7 +56,7 @@ export default Quizes;
 const QuizContainer = styled.div`
   /* background-color: #081733; */
 
-  background-color: #2b2aa2ff;
+  background-color: #17144bff;
   width: 100vw;
   /* height: 100vh; */
   height: 100%;
