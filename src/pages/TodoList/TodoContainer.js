@@ -73,9 +73,11 @@ const TodoContainer = () => {
 
 export default TodoContainer;
 const Cover = styled.div`
+  /* background-color: white; */
   background-color: #17144bff;
   height: 100vh;
   width: 100vw;
+  /* margin-top: 5rem; */
 `;
 
 const Container = styled.div`
@@ -84,6 +86,7 @@ const Container = styled.div`
   /* background-color: black;
   height: 100vh;
   width: 100vw; */
+  font-weight: bold;
 `;
 const ContainerLeft = styled.div`
   flex: 0.4;
@@ -99,6 +102,7 @@ const ContainerLeft = styled.div`
     outline: none;
     border: 0.1px solid gray;
     margin-top: 7px;
+    font-weight: bold;
   }
   > h3 {
     color: white;
@@ -110,6 +114,7 @@ const ContainerLeftButton = styled.div`
   button {
     margin-top: 10px;
     background-color: #e11a1a;
+    font-weight: 520;
   }
   button:first-child {
     margin-right: 25%;
