@@ -9,6 +9,8 @@ import TodoContainer from "./pages/TodoList/TodoContainer";
 import Quizes from "./pages/Quiz/Quizes";
 import Home from "./pages/Home/Home";
 import styled from "styled-components";
+import YourJournal from "./pages/YourJournal/YourJournal";
+
 function App() {
   return (
     <div>
@@ -18,13 +20,14 @@ function App() {
       {/* <Quotes /> */}
       {/* <Journal /> */}
 
-      <Routes />
+      {/* <Routes /> */}
 
       {/* <TodoContainer /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}
       {/* <Home /> */}
+      <YourJournal />
     </div>
   );
 }

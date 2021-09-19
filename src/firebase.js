@@ -17,4 +17,6 @@ const db = getFirestore(firebaseApp);
 
 const datab = getDatabase();
 
-export { db, datab };
+const dbRef = ref(getDatabase());
+
+export { db, datab, dbRef };
