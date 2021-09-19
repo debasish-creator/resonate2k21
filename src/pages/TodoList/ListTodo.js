@@ -12,7 +12,9 @@ const ListTodo = ({ todo, removeTodo }) => {
       {/* {console.log(todo.id)} */}
       <p>{todo.name}</p>
 
-      <button onClick={() => removeTodo(todo.id)}>{/* <CloseIcon /> */}</button>
+      <button onClick={() => removeTodo(todo.id)}>
+        <span>X</span>
+      </button>
     </ContainerRightBottom>
   );
 };
@@ -30,11 +32,13 @@ const ContainerRightBottom = styled.div`
     padding-top: 30px;
     color: white;
   }
-  /* > button {
+
+  > button {
     background-color: red;
     color: white;
+    padding: 10px;
     font-weight: lighter;
     margin-top: auto;
     margin-right: 20px;
-  } */
+  }
 `;
