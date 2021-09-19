@@ -27,8 +27,13 @@ const AudioPlayer = () => {
   return (
     <div>
       {/* <Button onClick={toggle}>{playing ? "Pause" : "Play"}</Button> */}
-      <Button variant="contained" color="secondary" onClick={toggle}>
-        {playing ? "Pause" : "Play"}
+      <Button
+        variant="contained"
+        color="secondary"
+        onClick={toggle}
+        style={{ fontWeight: 700 }}
+      >
+        {playing ? "Pause" : "Music"}
       </Button>
     </div>
   );

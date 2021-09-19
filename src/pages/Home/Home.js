@@ -8,6 +8,7 @@ import Widecarddata from "./Widecarddata";
 import { useState } from "react";
 import { display } from "@mui/system";
 import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
+import { Link } from "react-router-dom";
 import data from "./data";
 function Home() {
   const [data1, setData1] = useState(data);
@@ -18,12 +19,15 @@ function Home() {
 
       <NavContainer>
         <LogoContainer>
-          <h1>Project</h1>
+          <h1>mentical</h1>
         </LogoContainer>
         <NavBar>
           <ul>
             <li>Rescue Session</li>
-            <li>Guided Journal</li>
+            <Link to="/journal">
+              {" "}
+              <li>Guided Journal</li>
+            </Link>
             <li>Learning Paths</li>
           </ul>
         </NavBar>
@@ -105,6 +109,8 @@ const LearningPathContainer = styled.div`
     display: grid;
     justify-items: center;
     color: white;
+    font-size: 2.5rem;
+    padding: 2rem;
   }
 `;
 const NavContainer = styled.div`

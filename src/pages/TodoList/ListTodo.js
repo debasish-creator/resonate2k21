@@ -37,9 +37,15 @@ const ContainerRightBottom = styled.div`
   > button {
     background-color: red;
     color: white;
-    padding: 10px;
+    padding: 8px;
     font-weight: lighter;
     margin-top: auto;
     margin-right: 20px;
+    /* border-radius: 10px; */
+    font-weight: 700;
+  }
+  > span {
+    display: inline-block;
+    font-weight: 700;
   }
 `;

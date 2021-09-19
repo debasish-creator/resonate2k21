@@ -114,6 +114,7 @@ const JournalContainer = styled.div`
   button {
     width: 20%;
     /* margin-top: 1rem; */
+    font-weight: 700;
   }
 `;
 const ViewButton = styled.div`

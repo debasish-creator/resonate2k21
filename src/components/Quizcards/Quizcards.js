@@ -59,6 +59,7 @@ const CheckboxContainer = styled.div`
   > button {
     /* margin: 0 10rem; */
     margin-top: 2rem;
+    font-weight: 700;
   }
   > button:first-child {
     background-color: green;

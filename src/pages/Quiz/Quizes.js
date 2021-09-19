@@ -67,5 +67,6 @@ const QuizContainer = styled.div`
   flex-direction: column;
   > button {
     margin-top: 2rem;
+    font-weight: 800;
   }
 `;
