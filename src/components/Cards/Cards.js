@@ -6,11 +6,6 @@ const Cards = () => {
     <>
       <CardsContainer>
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </CardsContainer>
     </>
   );

@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import CarouselComponent from "../../components/Carousel/carouselComponent";
 import Card from "../../components/Cards/Card";
+import Cards from "../../components/Cards/Cards";
 import Widecards from "../../components/WideCards/WideCards";
 import Widecarddata from "./Widecarddata";
 import { useState } from "react";
 import { display } from "@mui/system";
 import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
+import data from "./data";
 function Home() {
+  const [data1, setData1] = useState(data);
   const [data2, setData2] = useState(Widecarddata);
   return (
     <div>
@@ -31,11 +34,19 @@ function Home() {
       <CarouselComponent />
 
       <LearningPathContainer>
-        <h2>Learning path</h2>
+        <h2>Productivity tools</h2>
         <CardContainer>
+          {/* <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
+          {data1.map((res) => {
+            const { id, heading, route } = res;
+            return (
+              <article key={id}>
+                <Card heading={heading} route={route} />
+              </article>
+            );
+          })}
         </CardContainer>
       </LearningPathContainer>
 

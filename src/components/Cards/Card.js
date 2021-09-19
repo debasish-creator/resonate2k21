@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-const Card = () => {
+import { Link } from "react-router-dom";
+const Card = ({ heading, route }) => {
   return (
     <>
-      <SingleCard>
-        <h1>Stress</h1>
-      </SingleCard>
+      <Link to={route}>
+        <SingleCard>
+          <h1>{heading}</h1>
+        </SingleCard>
+      </Link>
     </>
   );
 };
@@ -26,6 +29,7 @@ const SingleCard = styled.div`
   > h1 {
     color: whitesmoke;
     text-align: center;
+    padding-top: 1rem;
   }
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
