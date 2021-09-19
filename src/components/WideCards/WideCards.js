@@ -16,14 +16,13 @@ const Widecards = ({ heading, subheading, routes }) => {
 export default Widecards;
 
 const WidecardContainer = styled.div`
-  height: 50vh;
+  /* min-height: 60vh; */
+  height: fit-content;
+  padding: 5rem 0;
   width: 100vw;
 
   background-color: #081733;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: grid;
-  place-items: center; */
-  flex-direction: column;
 `;

@@ -5,6 +5,7 @@ import Card from "../../components/Cards/Card";
 import Widecards from "../../components/WideCards/WideCards";
 import Widecarddata from "./Widecarddata";
 import { useState } from "react";
+import { display } from "@mui/system";
 function Home() {
   const [data2, setData2] = useState(Widecarddata);
   return (
@@ -58,10 +59,16 @@ function Home() {
 export default Home;
 
 const GuidedJournalContainer = styled.div`
-  display: grid;
-  justify-items: center;
+  /* display: grid;
+  justify-items: center; */
   width: 100%;
   background: #2b2aa2ff;
+  color: white;
+  text-align: center;
+  > article > h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
 `;
 
 const WidecardContainer = styled.div`
