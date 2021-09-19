@@ -12,8 +12,10 @@ const Journal = () => {
   const [id, setId] = useState(0);
   const handleClick = (e) => {
     e.preventDefault();
-    set(ref(datab, "journals/"), {
+    const id = Math.ceil(Math.random() * 100);
+    set(ref(datab, "journals/" + id), {
       message: data,
+      id: id,
     });
     setData("");
     setId((id) => id + 1);
