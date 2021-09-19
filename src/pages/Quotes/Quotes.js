@@ -40,7 +40,7 @@ const Quotes = () => {
 export default Quotes;
 
 const QuoteContainer = styled.div`
-  background-color: #081733;
+  background-color: #17144bff;
   color: white;
   height: 100vh;
   width: 100vw;

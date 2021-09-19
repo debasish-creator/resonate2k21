@@ -20,14 +20,14 @@ function App() {
       {/* <Quotes /> */}
       {/* <Journal /> */}
 
-      {/* <Routes /> */}
+      <Routes />
 
       {/* <TodoContainer /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}
       {/* <Quizes /> */}
       {/* <Home /> */}
-      <YourJournal />
+      {/* <YourJournal /> */}
     </div>
   );
 }
