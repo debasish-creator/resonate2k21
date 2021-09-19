@@ -6,6 +6,7 @@ import Widecards from "../../components/WideCards/WideCards";
 import Widecarddata from "./Widecarddata";
 import { useState } from "react";
 import { display } from "@mui/system";
+import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
 function Home() {
   const [data2, setData2] = useState(Widecarddata);
   return (
@@ -23,6 +24,9 @@ function Home() {
             <li>Learning Paths</li>
           </ul>
         </NavBar>
+        <AudioPlayerContainer>
+          <AudioPlayer />
+        </AudioPlayerContainer>
       </NavContainer>
       <CarouselComponent />
 
@@ -57,6 +61,10 @@ function Home() {
 }
 
 export default Home;
+const AudioPlayerContainer = styled.div`
+  display: grid;
+  justify-items: center;
+`;
 
 const GuidedJournalContainer = styled.div`
   /* display: grid;
@@ -89,12 +97,12 @@ const LearningPathContainer = styled.div`
   }
 `;
 const NavContainer = styled.div`
-  height: 60px;
+  height: 80px;
   background: #2b2aa2ff;
-  padding: 30px;
-  padding-top: 10px;
+  padding: 20px;
+
   display: grid;
-  grid-template-columns: 20% 70%;
+  grid-template-columns: 20% 70% 10%;
   align-items: center;
 `;
 
@@ -112,7 +120,7 @@ const NavBar = styled.div`
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 15px;
   display: grid;
-  height: 60%;
+  height: 100%;
   > ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
