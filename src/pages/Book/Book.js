@@ -60,7 +60,6 @@ const Book = () => {
 export default Book;
 const BookData = styled.div`
   background-color: #081733;
-  height: 100%;
   width: 100%;
 `;
 const FormContainer = styled.div`
@@ -70,6 +69,7 @@ const FormContainer = styled.div`
   > form {
     margin: 1rem 1rem;
   }
+
   input {
     /* margin: 1rem 1rem; */
 
