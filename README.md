@@ -1,6 +1,6 @@
 ### We have created an app as well as a web-based solution aiming at solving mental health issues especially during the time of covid. 
-## App link- 
-## Problems solved-
+## App link- https://github.com/rituraj2000/resonate2k21
+
 
 ## App solution-
 1. App UI is made for quick fixes to mental health problems.
