@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   box-sizing: border-box;
+  background-color: #17144bff;
 }
 
 code {

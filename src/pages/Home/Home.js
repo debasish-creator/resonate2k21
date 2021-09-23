@@ -10,9 +10,14 @@ import { display } from "@mui/system";
 import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
 import { Link } from "react-router-dom";
 import data from "./data";
+import learndata from "./learningData";
+import Journaltype from "../../components/Journal/Journaltype";
+import journaldata from "./journaldata";
 function Home() {
+  const [learningData, setLearningData] = useState(learndata);
   const [data1, setData1] = useState(data);
   const [data2, setData2] = useState(Widecarddata);
+  const [journal, setJournal] = useState(journaldata);
   return (
     <div>
       {console.log("Gourab Maghya")}
@@ -36,8 +41,45 @@ function Home() {
         </AudioPlayerContainer>
       </NavContainer>
       <CarouselComponent />
-
+      <Mood>
+        <div>10</div>
+        <div>8</div>
+        <div>6</div>
+        <div>4</div>
+        <div>2</div>
+      </Mood>
       <LearningPathContainer>
+        <h2>Learning Paths</h2>
+        <CardContainer>
+          {/* <Card />
+          <Card />
+          <Card /> */}
+          {learningData.map((res) => {
+            const { id, heading, route } = res;
+            return (
+              <article key={id}>
+                <Card heading={heading} route={route} />
+              </article>
+            );
+          })}
+        </CardContainer>
+      </LearningPathContainer>
+      <LearningPathContainer>
+        <h2>Guided Journal</h2>
+        <GuidedJournal>
+          {journal.map((data) => {
+            const { id, heading, routes } = data;
+            return (
+              <article key={id}>
+                <Journaltype heading={heading} />
+              </article>
+            );
+          })}
+          {/* <Journaltype />
+          <Journaltype />
+          <Journaltype />
+          <Journaltype /> */}
+        </GuidedJournal>
         <h2>Productivity tools</h2>
         <CardContainer>
           {/* <Card />
@@ -98,12 +140,13 @@ const WidecardContainer = styled.div`
   /* width: 50%; */
 `;
 const CardContainer = styled.div`
-  height: 400px;
+  height: 100%;
   display: grid;
   background-color: #17144bff;
   grid-template-columns: repeat(3, 1fr);
 `;
 const LearningPathContainer = styled.div`
+  margin-bottom: 5rem;
   > h2 {
     background: #17144bff;
     display: grid;
@@ -157,4 +200,22 @@ const NavBar = styled.div`
     border-radius: 20px;
     transform: scale(1.1);
   }
+`;
+
+const Mood = styled.div`
+  color: white;
+  display: flex;
+
+  background-color: #3f3fb4;
+  border-radius: 2rem;
+  width: 50vw;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  > div {
+    margin: 0 auto;
+  }
+`;
+
+const GuidedJournal = styled.div`
+  height: 100%;
 `;
