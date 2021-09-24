@@ -55,10 +55,10 @@ function Home() {
           <Card />
           <Card /> */}
           {learningData.map((res) => {
-            const { id, heading, route } = res;
+            const { id, heading, route, img } = res;
             return (
               <article key={id}>
-                <Card heading={heading} route={route} />
+                <Card heading={heading} route={route} img={img} />
               </article>
             );
           })}
@@ -86,10 +86,10 @@ function Home() {
           <Card />
           <Card /> */}
           {data1.map((res) => {
-            const { id, heading, route } = res;
+            const { id, heading, route, img } = res;
             return (
               <article key={id}>
-                <Card heading={heading} route={route} />
+                <Card heading={heading} route={route} img={img} />
               </article>
             );
           })}
@@ -98,7 +98,7 @@ function Home() {
 
       <GuidedJournalContainer>
         {data2.map((data) => {
-          const { h, heading, subheading, routes, id } = data;
+          const { h, heading, subheading, routes, id, img } = data;
           return (
             <article key={id}>
               <h1>{h}</h1>
@@ -107,6 +107,7 @@ function Home() {
                   heading={heading}
                   subheading={subheading}
                   routes={routes}
+                  img={img}
                 />
               </WidecardContainer>
             </article>
