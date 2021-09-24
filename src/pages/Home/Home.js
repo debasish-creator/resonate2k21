@@ -68,10 +68,14 @@ function Home() {
         <h2>Guided Journal</h2>
         <GuidedJournal>
           {journal.map((data) => {
-            const { id, heading, routes } = data;
+            const { id, heading, routes, questions, route } = data;
             return (
               <article key={id}>
-                <Journaltype heading={heading} />
+                <Journaltype
+                  heading={heading}
+                  questions={questions}
+                  route={route}
+                />
               </article>
             );
           })}

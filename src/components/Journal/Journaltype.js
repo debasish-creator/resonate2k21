@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
-
-const Journaltype = ({ heading }) => {
+import { Link } from "react-router-dom";
+const Journaltype = ({ heading, route, questions }) => {
+  console.log(questions);
   return (
     <>
-      <Container>
-        <h1>{heading}</h1>
-        <span>
-          <FaChevronRight />
-        </span>
-      </Container>
+      <Link to="/journal">
+        <Container>
+          <h1>{heading}</h1>
+
+          <span>
+            <FaChevronRight />
+          </span>
+        </Container>
+      </Link>
     </>
   );
 };
