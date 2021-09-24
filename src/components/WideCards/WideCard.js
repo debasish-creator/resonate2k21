@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Widecard = ({ heading, subheading, routes }) => {
+const Widecard = ({ heading, subheading, routes, img }) => {
   return (
     <>
       {/* <SingleWideCard>
@@ -13,7 +13,10 @@ const Widecard = ({ heading, subheading, routes }) => {
 
       <Link to={routes}>
         <SingleWideCard>
-          <h1>{heading}</h1>
+          <section>
+            <h1>{heading}</h1>
+            <img src={img} alt="img" />
+          </section>
 
           <div>{subheading}</div>
         </SingleWideCard>
@@ -64,5 +67,20 @@ const SingleWideCard = styled.div`
     transform: scale(1.01);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  > section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    > img {
+      height: 9rem;
+    }
+    > h1 {
+      color: whitesmoke;
+      font-size: 2rem;
+      padding: 4rem 0.5rem;
+    }
   }
 `;

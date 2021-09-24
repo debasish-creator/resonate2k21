@@ -2,11 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import WideCard from "./WideCard";
 import { Link } from "react-router-dom";
-const Widecards = ({ heading, subheading, routes }) => {
+const Widecards = ({ heading, subheading, routes, img }) => {
   return (
     <>
       <WidecardContainer>
-        <WideCard heading={heading} subheading={subheading} routes={routes} />
+        <WideCard
+          heading={heading}
+          subheading={subheading}
+          routes={routes}
+          img={img}
+        />
         {/* <WideCard /> */}
       </WidecardContainer>
     </>
