@@ -8,6 +8,7 @@ import Book from "./pages/Book/Book";
 import Home from "./pages/Home/Home";
 import Quiz from "./pages/Quiz/Quizes";
 import Todo from "./pages/TodoList/TodoContainer";
+import YourJournal from "./pages/YourJournal/YourJournal";
 const Routes = () => {
   return (
     <Router>
@@ -33,6 +34,9 @@ const Routes = () => {
         </Route>
         <Route path="/music">
           <Quotes />
+        </Route>
+        <Route path="/YourJournal">
+          <YourJournal />
         </Route>
       </Switch>
     </Router>

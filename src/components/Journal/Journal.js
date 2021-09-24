@@ -4,6 +4,8 @@ import { Button } from "@material-ui/core";
 import { useState } from "react";
 import { getDatabase, set, ref } from "firebase/database";
 import { datab } from "../../firebase";
+import { Link } from "react-router-dom";
+
 // import uniqid from "uniqid";
 
 const Journal = () => {
@@ -36,11 +38,9 @@ const Journal = () => {
           <Button variant="contained" color="secondary" type="submit">
             Save
           </Button>
-          <ViewButton>
-            <Button variant="contained" color="secondary" type="submit">
-              Your Journals
-            </Button>
-          </ViewButton>
+          <Button variant="contained" color="secondary" type="submit">
+            <Link to="/YourJournal">Your Journals</Link>
+          </Button>
         </form>
       </JournalContainer>
     </>
