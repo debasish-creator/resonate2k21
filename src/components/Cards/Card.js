@@ -26,6 +26,7 @@ const SingleCard = styled.div`
   top: 10%;
   border-radius: 1.2rem;
   transform: 1s 1s;
+  margin-top: 2rem;
   > h1 {
     color: whitesmoke;
     text-align: center;

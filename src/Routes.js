@@ -9,6 +9,9 @@ import Home from "./pages/Home/Home";
 import Quiz from "./pages/Quiz/Quizes";
 import Todo from "./pages/TodoList/TodoContainer";
 import YourJournal from "./pages/YourJournal/YourJournal";
+import Days from "./components/days/days";
+import Streak from "./components/days/streak";
+import JournalType from "./components/Journal/Journaltype";
 const Routes = () => {
   return (
     <Router>
@@ -37,6 +40,15 @@ const Routes = () => {
         </Route>
         <Route path="/YourJournal">
           <YourJournal />
+        </Route>
+        <Route path="/day">
+          <Days />
+        </Route>
+        <Route path="/streak">
+          <Streak />
+        </Route>
+        <Route path="/journaltype">
+          <JournalType />
         </Route>
       </Switch>
     </Router>

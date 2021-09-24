@@ -1,11 +1,11 @@
 export default [
-  {
-    id: 1,
-    h: "Guided Journal",
-    heading: "Reflect on where you are at",
-    subheading: "Write a short journal",
-    routes: "/journal",
-  },
+  // {
+  //   id: 1,
+  //   h: "Guided Journal",
+  //   heading: "Reflect on where you are at",
+  //   subheading: "Write a short journal",
+  //   routes: "/journal",
+  // },
   {
     id: 2,
     h: "Find me a book",
